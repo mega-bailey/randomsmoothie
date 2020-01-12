@@ -6,7 +6,7 @@ button.addEventListener('click', function() {
       'fresh squeezed fruit juice',
       'coconut water',
       'milk (dairy or nondairy)',
-      'chilled tea: green, black or herbal',
+      'chilled tea: green, black, or herbal',
       'yogurt (dairy or nondairy)'
     ];
     var fruits = ['cherries', 'banana', 'mango', 'pineapple', 'avocado'];
@@ -53,8 +53,8 @@ button.addEventListener('click', function() {
   function displaySmoothie(smoothie) {
     document.querySelector(
       '.message'
-    ).innerHTML = `Start with ${smoothie.base}, add some ${smoothie.fruit}, a handful of ${smoothie.berries}, and ${smoothie.vegetable}. 
-    Throw in some ice if desired and blend until smooth. 
+    ).innerHTML = `Start with ${smoothie.base}. Add some ${smoothie.fruit}, a handful of ${smoothie.berries}, and ${smoothie.vegetable}. 
+    Throw in some ice if desired, and blend until smooth. <br>
     If you want an extra boost, add a bit of ${smoothie.additive}. ${smoothie.toast}!`;
   }
   var generateSmoothie = makeSmoothie();
