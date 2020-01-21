@@ -26,38 +26,45 @@ body {
 }
 
 .heading-container {
-  padding: 5rem 0 0 2rem;
-  line-height: 1;
-  float: left;
+  height: 14rem;
+  padding: 2rem 0 0 2rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
 }
 
 .heading {
   text-align: left;
   color: $color-white;
   text-shadow: 1px 1px 3px rgba($color-grey, 0.6);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   &--display {
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: $font-display;
   }
   &--cursive {
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: $font-cursive;
   }
 }
 
+.sub-heading-container {
+  padding: 0 2rem;
+  line-height: 0;
+}
+
 .btn {
-  margin: 4rem 6rem;
+  margin: 0 2rem 0 10rem;
   border: none;
   background-image: linear-gradient(top, lighten($color-blue, 20), $color-blue);
   border-radius: 50%;
   box-shadow: 0 5px 8px 6px rgba($color-grey, 0.4),
     inset 0 5px 10px 10px rgba($color-white, 0.3);
-  height: 15rem;
-  width: 15rem;
-  font-size: 6rem;
+  height: 12rem;
+  width: 12rem;
+  font-size: 5rem;
   font-family: $font-display;
-  padding: 3rem 3rem 2rem 2.5rem;
+  padding-top: 1rem;
   text-transform: uppercase;
   color: $color-white;
   text-shadow: 1px 1px 3px rgba($color-grey, 0.6);
@@ -89,8 +96,9 @@ body {
 .message-container {
   float: left;
   margin: 3rem 6rem 1rem 6rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: $color-white;
+  padding: 2rem;
   text-shadow: 1px 1px 3px rgba($color-grey, 0.6);
 }
 

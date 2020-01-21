@@ -27,7 +27,7 @@ button.addEventListener('click', function() {
       'protein powder',
       'chia seeds',
       'hemp seeds',
-      'almond butter',
+      'almond or peanut butter',
       'cacao nibs'
     ];
     var toasts = ['Cheers', 'Enjoy', 'Bottoms Up'];
