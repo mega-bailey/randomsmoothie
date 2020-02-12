@@ -39,7 +39,6 @@ body {
 
 .container {
   width: 70%;
-  max-width: 110rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -164,42 +163,6 @@ body {
 }
 
 //MEDIA QUERIES
-/* 
-0 - 600px:    Phone
-600 - 900px:  Tablet portrait
-900 - 1200px: Tablet landscape
-[1200 - 1800px: Desktop normal styles apply]
-1800+ :       Larger Desktop 
-
-1em = 16px; 
-*/
-
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
-      //600px
-      @content;
-    }
-  }
-  @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) {
-      //900px
-      @content;
-    }
-  }
-  @if $breakpoint == tab-land {
-    @media only screen and (max-width: 75em) {
-      //1200px
-      @content;
-    }
-  }
-  @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {
-      //1800px
-      @content;
-    }
-  }
-}
 
 @media only screen and (max-width: 1200px) {
   html {
@@ -240,6 +203,7 @@ body {
     font-size: 50%;
   }
   .container {
+    width: 80vw;
     display: flex;
     flex-direction: column;
   }
@@ -280,7 +244,7 @@ body {
     font-size: 37.5%;
   }
   .container {
-    width: 85%;
+    width: 85vw;
     padding: 1.5rem;
   }
   .header {
@@ -306,16 +270,25 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-  html {
-    font-size: 31.25%;
-  }
   .container {
-    padding: 1.5rem;
-    min-height: 60vh;
+    width: 95vw;
+    height: 95vh;
+  }
+  .btn-container {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
   }
   .btn {
-    width: auto;
-    padding: 1rem 1.5rem;
+    width: 17rem;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
   }
   .recipe-container {
     margin-top: 2rem;
@@ -323,7 +296,7 @@ body {
   .recipe {
     &__directions {
       margin: 0 auto;
-      padding: 1rem 0 0 0;
+      padding: 1rem 0;
     }
   }
 }
