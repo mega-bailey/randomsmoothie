@@ -280,6 +280,7 @@ body {
     font-size: 37.5%;
   }
   .container {
+    width: 85%;
     padding: 1.5rem;
   }
   .header {
@@ -296,6 +297,7 @@ body {
     margin: 2rem;
   }
   .recipe {
+    padding-top: 1rem;
     &__directions {
       margin: 0 auto;
       padding: 2rem 4rem;
@@ -311,12 +313,12 @@ body {
     padding: 1.5rem;
     min-height: 60vh;
   }
-  .header {
-    margin: 2rem 0;
-  }
   .btn {
     width: auto;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
+  }
+  .recipe-container {
+    margin-top: 2rem;
   }
   .recipe {
     &__directions {
