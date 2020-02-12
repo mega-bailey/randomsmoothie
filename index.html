@@ -5,52 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Poppins|Baloo|Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
       rel="stylesheet"
     />
 
+    <script
+      src="https://kit.fontawesome.com/88f1541563.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="dist/css/style.min.css" />
-    <title>Smoothie Generator</title>
+    <title>Random Smoothie Generator</title>
   </head>
   <body>
-    <div class="background">
-      <div class="heading-container">
-        <h1>
-          <span class="heading heading--cursive">Random</span><br />
-          <span class="heading heading--display"
-            >Smooth<span class="lowercase">i</span>e Generator</span
-          >
+    <div class="container">
+      <header class="header">
+        <i class="fas fa-blender mobile__logo"></i>
+        <h1 class="header__title">
+          Smoothie
         </h1>
+        <i class="fas fa-blender header__logo"></i>
+        <h1 class="header__title">Generator</h1>
+      </header>
 
-        <!-- <h1 class="heading heading--display">
-          Smooth<span class="lowercase">i</span>e Generator
-        </h1> -->
-        <!-- <p class="heading heading--text">
-          Hit the button to generate random, healthy, and delicious ingredients!
-        </p> -->
-        <button class="btn">M<span class="lowercase">i</span>x</button>
-      </div>
-      <!-- <div class="btn-container">
-        <button class="btn">M<span class="lowercase">i</span>x</button>
-      </div> -->
-      <div class="sub-heading-container">
-        <p class="heading heading--text">
-          Hit the button to generate random, healthy, and delicious ingredients!
-        </p>
+      <div class="btn-container">
+        <button class="btn btn__savory">
+          <span>Savory</span>
+        </button>
+        <button class="btn btn__sweet">
+          <span>Sweet</span>
+        </button>
+        <button class="btn btn__random">
+          <span>Random</span>
+        </button>
       </div>
 
-      <div class="message-container">
-        <div class="message"></div>
-      </div>
-      <div class="credit">
-        <p>
-          Photo credit
-          <a href="https://unsplash.com/@pineapple" target="_blank"
-            >Pineapple Supply Co. via Unsplash.</a
-          >
-        </p>
+      <div class="recipe-container">
+        <div class=" recipe">
+          <ul class="recipe__ingredients-list">
+            <li class="recipe__item--base"></li>
+            <li class="recipe__item--fruit"></li>
+            <li class="recipe__item--berries"></li>
+            <li class="recipe__item--veg"></li>
+            <li class="recipe__item--addin"></li>
+          </ul>
+        </div>
+
+        <div class="recipe__directions"></div>
       </div>
     </div>
+
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
