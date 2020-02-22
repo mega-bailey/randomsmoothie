@@ -112,13 +112,6 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s;
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    transform: translateY(1px);
-    box-shadow: 1px 2px 2px $color-secondary;
-  }
 
   &__savory {
     background-image: linear-gradient(
@@ -140,6 +133,17 @@ body {
       lighten($color-blue, 10),
       darken($color-blue, 8)
     );
+  }
+
+  &:hover {
+    box-shadow: 1px 4px 4px $color-secondary;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 1px 2px 2px $color-secondary;
   }
 }
 
